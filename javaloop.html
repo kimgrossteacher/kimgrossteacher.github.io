@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Calculator</h2>
+<input id="calculatortext1" type="text" placeholder="Enter first number">
+<input id="calculatortext2" type="text" placeholder="Enter second number">
+<button onclick="calculateSum()">Calculate</button>
+
+<p id="demo"></p>
+
+<script>
+function calculateSum() {
+    let num1 = parseFloat(document.getElementById("calculatortext1").value);// first value
+    let num2 = parseFloat(document.getElementById("calculatortext2").value);//second value
+
+  
+    let sum = num1 + num2;// add the two values together.  You could just change this to make it do other math functions from different buttons
+    document.getElementById("demo").innerHTML = "Sum: " + sum;
+}
+</script>
+
+</body>
+</html>
